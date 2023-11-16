@@ -1,0 +1,189 @@
+** start of undefined **
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="styles.css" />
+      </head>
+    <body>
+      <main>
+        <section id="navbar" class="navbar">
+          <header>
+          <div class="space2"></div>
+            <nav>
+              <div class="topnav">
+              <a class="nav-link" id="nav-link" href="#welcome-section">About</a>
+              <a class="nav-link" id="nav-link" href="#projects">Work</a>
+              <a class="nav-link" id="nav-link" href="#profile">Contact</a>
+              </div>
+              </nav>
+            </header>
+          </section>
+        <section id="welcome-section" class="welcome-section">
+          <div class="space1"></div>
+          <h1 class="middle">I am Maestro</h1>
+          <h4 class="middle italic">a web developer<h4>
+          </section>
+        <section class="project-tile">
+          <a id="profile-link" target="_blank" class="project-tile"></a>
+          </section>
+        <section id="projects" class="projects">
+          <p class="project-tile"></p>
+          <h2 class="middle underline">These are some of my projects</h2>
+          <div class="project ">
+            <a href="https://www.google.com">
+              <img class="project-images" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.yU-WiwbVfV4_rdNOylLidwHaHa%26pid%3DApi&f=1&ipt=1fb26f8fd3d63435acdec9907879a26ae3ea2dce24653029682b2b374aaa16af&ipo=images"></a>
+            <h4 class="project-texts">Tribute Page</h4>
+          </div>
+          <div class="project">
+            <a href="https://www.facebook.com">
+              <img class="project-images" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PmGBosXH0Hz4VIAAbnmK2wHaFM%26pid%3DApi&f=1&ipt=77be12dbd8d5d66c03bc57854e7df488463c7bb48f6f2fca84dc72d1b111a53d&ipo=images"></a>
+            <h4 class="project-texts">Random Quote Machine</h4>
+          </div>
+          <div class="project">
+            <a href="https://www.goodreads.com">
+              <img class="project-images" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.KVA6FozRYZ6nTpmts3h_YAHaHa%26pid%3DApi&f=1&ipt=d77b1cefeb8bb9d317b456521f23a4231c9ddcb89955a836f31e4f95c820d667&ipo=images"></a>
+            <h4 class="project-texts">Javascript Calculator</h4>
+          </div>
+          </section>
+        <section id="profile" class="profile">
+          <div class="space1"></div>
+          <h1 class="middle">Let's work together</h1>
+          <p class="middle">how do you take your coffee?</p>
+          <div class="email">
+            <a href="mailto:example@example.com">
+            <h4 class="middle email">@ Send a mail</h4></a></div>
+          </section>
+        </main>
+        <footer class="footer">
+          <p class="note">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+          <p>© Created for freeCodeCamp </p>
+          </footer>
+      </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --color1: #009900;
+  --color2:#4d9900;
+  --color3: #484848;
+  --color4: #585858;
+  --color5: #996633;
+  --color6: #c68c53;
+}
+.navbar {
+  background: linear-gradient(
+  295deg,
+  var(--color1) 70%, 
+  var(--color2) 95%);
+  height: 50px;
+  width: 100vw
+}
+.nav-link {
+  color: white; 
+  padding: 15px;
+
+}
+.topnav a:hover {
+  color: white;
+  background-color: var(--color5)
+}
+.topnav{
+  float: right;
+  margin-right: 50px;
+}
+.welcome-section {
+  background: linear-gradient(
+  295deg,
+  var(--color3) 70%, 
+  var(--color4) 95%);
+  height: 100vh;  
+}
+.space1 {
+  height: 45%;
+}
+.space2 {
+  height: 35%;
+}
+.middle {
+    height: 0%; 
+    text-align:center; 
+    display:table;
+    width:100%;
+}
+.italic {
+  font-style: italic;
+  color: var(--color1);
+}
+.projects {
+  background: linear-gradient(
+  295deg,
+  var(--color5) 70%, 
+  var(--color6) 95%);
+  height: 100vh;   
+
+}
+.underline {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration-line: underline;
+}
+.project-images {
+  width: 100%;
+  height: 92.1%
+}
+.project-texts {
+  text-align: center;
+  background-color: var(--color3);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.project{
+  border: 1px solid black;
+  width: 30%;
+  height: 50%;
+  margin-left: 10px;
+  display: inline-block;
+}
+.profile {
+background: linear-gradient(
+  295deg,
+  var(--color3) 70%, 
+  var(--color4) 95%);
+  height: 100vh;   
+}
+.email {
+  padding-top: 30px;
+}
+.email a h4:hover {
+  transform: scale(1.2)
+}
+.footer {
+  background: var(--color3)
+}
+h1, h2, h4, p {
+  color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+.footer {
+  border-top: 2px solid white;
+  padding: 20px
+}
+.note {
+  padding-bottom: 10px;
+}
+
+** end of undefined **
+
